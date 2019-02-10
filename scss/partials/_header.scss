@@ -1,0 +1,16 @@
+header {
+    background-color: $green;
+    overflow: visible;
+    position: relative;
+	line-height: 1.5;
+	.wrapper {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		h1 {
+		    text-align: center;
+			padding: 20px;
+			font-size: 24px;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+footer {
+	padding: 20px;
+	background-color: $blue;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+	.wrapper {
+		position: relative;
+		margin: 0 auto;
+	}
+}
