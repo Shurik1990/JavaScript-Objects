@@ -3,9 +3,35 @@
 	line-height: 1.5;
 	background-color: $yellow;
 	padding: 20px;
-	.wrapper {
-		width: 100%;
-		position: relative;
-		margin: 0 auto;
+	.calc {
+		margin: 10px 0;
+		border: 1px solid #000;
+		border-radius: 10px;
+		padding: 20px;
+		width: 35%;
+		div {
+			margin: 10px 0;
+			text-align: center;
+		}
+		label {
+			margin: 0 10px 0 0;
+		}
+		input[type=text] {
+			padding: 5px 10px;
+			border-radius: 5px;
+			border: 1px solid #000033;
+		}
+		input[type=button] {
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 16px;
+			border: 1px solid #000033;
+			cursor: pointer;
+		}
+		.button {
+			padding: 5px 10px;
+			font-size: 16px;
+			cursor: pointer;
+		}
 	}
 }

@@ -145,10 +145,31 @@ header {
   line-height: 1.5;
   background-color: rgba(237, 238, 33, 0.5);
   padding: 20px; }
-  #block1 .wrapper {
-    width: 100%;
-    position: relative;
-    margin: 0 auto; }
+  #block1 .calc {
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%; }
+    #block1 .calc div {
+      margin: 10px 0;
+      text-align: center; }
+    #block1 .calc label {
+      margin: 0 10px 0 0; }
+    #block1 .calc input[type=text] {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #000033; }
+    #block1 .calc input[type=button] {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      border: 1px solid #000033;
+      cursor: pointer; }
+    #block1 .calc .button {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer; }
 
 #block2 {
   position: relative;

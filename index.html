@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<title>Задание 6-ой недели</title>
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
 </head>
 <body>
 	<div class="layout">
@@ -20,9 +21,17 @@
 			<div class="wrapper">
 				<section id="block1">
 					<h2>Задача №1</h2>
-					<script>
-						
-					</script>
+					<div class="calc">
+						<div><label>Первое число:</label><input type="text" id="first" name="first" placeholder="Введите число"/></div>
+						<div><label>Второе число:</label><input type="text" id="second" name="second" placeholder="Введите число"/></div>
+						<div>
+							<button class="button" id="sum" name="sum" value="+">+</button>
+							<button class="button" id="sub" name="sub" value="-">-</button>
+							<button class="button" id="multi" name="multi" value="*">*</button>
+							<button class="button" id="divide" name="divide" value="/">/</button>
+						</div>
+						<div><label>Результат:</label><input type="text" name="result" placeholder="Ответ"/></div>
+					</div>
 				</section>
 				<section id="block2">
 					<h2>Задача №2</h2>
