@@ -83,8 +83,14 @@
 				</section>
 				<section id="block6">
 					<h2>Задача №6</h2>
+					<div id="out"></div>
 					<script>
-						
+						var n = +prompt("Введите натуральное число", "");
+						function my_function(n) {
+							if (n <= 1) return n;
+							return my_function(n - 1) + " " + n;
+						}
+						document.getElementById("out").innerHTML = my_function(n);
 					</script>
 				</section>
 				<section id="block7">
