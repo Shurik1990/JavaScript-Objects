@@ -63,7 +63,22 @@
 				<section id="block5">
 					<h2>Задача №5</h2>
 					<script>
+						var salaries = {
+							"Вася": 100,
+							"Петя": 300,
+							"Даша": 250
+						};
 						
+						var max = 0;
+						var maxName = "";
+						for (var name in salaries) {
+							if (max < salaries[name]) {
+								max = salaries[name];
+								maxName = name;
+							}
+						}
+
+						document.write( maxName || "нет сотрудников" );
 					</script>
 				</section>
 				<section id="block6">
