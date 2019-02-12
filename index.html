@@ -95,8 +95,28 @@
 				</section>
 				<section id="block7">
 					<h2>Задача №7</h2>
+					<h3>Первый способ:</h3>
 					<script>
-						
+						var n = +prompt("Введите число", "");
+						function sumTo(n) {
+							var sum = 0;
+							for (var i = 1; i <= n; i++) {
+								sum += i;
+							}
+							return sum;
+						}
+
+						document.write( sumTo(n) );
+					</script>
+					<h3>Второй способ:</h3>
+					<script>
+						var n = +prompt("Введите число", "");
+						function sumTo(n) {
+							if (n == 1) return 1;
+							return n + sumTo(n - 1);
+						}
+
+						document.write( sumTo(n) );
 					</script>
 				</section>
 				<section id="block8">
