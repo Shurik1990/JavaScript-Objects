@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/all.css" type="text/css"/>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<title>Задание 6-ой недели</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 	<div class="layout">
@@ -25,8 +26,15 @@
 				</section>
 				<section id="block2">
 					<h2>Задача №2</h2>
+						<input type="text" id="text" placeholder="Текст" name="name">
+						<button class="button" onclick="Upper();">Увеличить))</button>
 					<script>
-						
+						function Upper() {
+							var text = document.querySelectorAll("input[type=text]")
+							for (var i = 0, element; element = text[i++];) {
+								element.value = (element.value).toUpperCase();
+							}
+						}
 					</script>
 				</section>
 				<section id="block3">
