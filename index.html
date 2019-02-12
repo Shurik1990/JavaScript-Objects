@@ -46,7 +46,18 @@
 				<section id="block4">
 					<h2>Задача №4</h2>
 					<script>
-						
+						var salaries = {
+							"Вася": 100,
+							"Петя": 300,
+							"Даша": 250
+						};
+
+						var sum = 0;
+						for (var name in salaries) {
+						  sum += salaries[name];
+						}
+
+						document.write( sum );
 					</script>
 				</section>
 				<section id="block5">
