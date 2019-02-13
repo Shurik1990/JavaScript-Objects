@@ -62,8 +62,8 @@
 
 $(document).ready(function() {	
 
-	$("input[name=sum]").on('click', function () {
-		var action = $("input[name=sum]").val();
+	$("input[name=sums]").on('click', function () {
+		var action = $("input[name=sums]").val();
         var firsts = $("input[name=firsts]").val() * 1;
         var seconds = $("input[name=seconds]").val() * 1;
 		var sum = sum(firsts, seconds);
@@ -76,8 +76,8 @@ $(document).ready(function() {
 		$("input[name=results]").val(results);
     });
 	
-	$("input[name=sub]").on('click', function () {
-		var action = $("input[name=sub]").val();
+	$("input[name=subs]").on('click', function () {
+		var action = $("input[name=subs]").val();
         var firsts = $("input[name=firsts]").val() * 1;
         var seconds = $("input[name=seconds]").val() * 1;
 		var sub = sub(firsts, seconds);
@@ -90,8 +90,8 @@ $(document).ready(function() {
 		$("input[name=results]").val(results);
     });
 	
-	$("input[name=multi]").on('click', function () {
-		var action = $("input[name=multi]").val();
+	$("input[name=multis]").on('click', function () {
+		var action = $("input[name=multis]").val();
         var firsts = $("input[name=firsts]").val() * 1;
         var seconds = $("input[name=seconds]").val() * 1;
 		var multi = multi(firsts, seconds);
@@ -104,8 +104,8 @@ $(document).ready(function() {
 		$("input[name=results]").val(results);
     });
 	
-	$("input[name=divide]").on('click', function () {
-		var action = $("input[name=divide]").val();
+	$("input[name=divides]").on('click', function () {
+		var action = $("input[name=divides]").val();
         var firsts = $("input[name=firsts]").val() * 1;
         var seconds = $("input[name=seconds]").val() * 1;
 		var divide = divide(firsts, seconds);
