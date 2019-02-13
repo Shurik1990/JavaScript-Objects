@@ -138,8 +138,31 @@
 				</section>
 				<section id="block8">
 					<h2>Задача №8</h2>
+					<h3>Первый способ:</h3>
 					<script>
-						
+						function NumbersInterval() {
+							var i = 1;
+							var timerId = setInterval(function() {
+								console.log(i);
+								if (i == 20) clearInterval(timerId);
+								i++;
+							}, 100);
+						}
+			
+						NumbersInterval();
+					</script>
+					<h3>Второй способ:</h3>
+					<script>
+						function NumbersTimeout() {
+							var i = 1;
+							var timerId = setTimeout(function go() {
+								console.log(i);
+								if (i < 20) setTimeout(go, 100);
+								i++;
+							}, 100);
+						}
+
+						NumbersTimeout();
 					</script>
 				</section>
 			</div>
