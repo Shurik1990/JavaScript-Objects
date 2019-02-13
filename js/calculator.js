@@ -57,3 +57,65 @@
     });
 
 });
+
+// Калькулятор с радио кнопками
+
+$(document).ready(function() {	
+
+	$("input[name=sum]").on('click', function () {
+		var action = $("input[name=sum]").val();
+        var firsts = $("input[name=firsts]").val() * 1;
+        var seconds = $("input[name=seconds]").val() * 1;
+		var sum = sum(firsts, seconds);
+		var results;
+		
+		function sum (firsts, seconds) {
+            results = firsts + seconds;
+        }
+        
+		$("input[name=results]").val(results);
+    });
+	
+	$("input[name=sub]").on('click', function () {
+		var action = $("input[name=sub]").val();
+        var firsts = $("input[name=firsts]").val() * 1;
+        var seconds = $("input[name=seconds]").val() * 1;
+		var sub = sub(firsts, seconds);
+		var results;
+		
+		function sub (firsts, seconds) {
+            results = firsts - seconds;
+        }
+        
+		$("input[name=results]").val(results);
+    });
+	
+	$("input[name=multi]").on('click', function () {
+		var action = $("input[name=multi]").val();
+        var firsts = $("input[name=firsts]").val() * 1;
+        var seconds = $("input[name=seconds]").val() * 1;
+		var multi = multi(firsts, seconds);
+		var results;
+		
+		function multi (firsts, seconds) {
+            results = firsts * seconds;
+        }
+        
+		$("input[name=results]").val(results);
+    });
+	
+	$("input[name=divide]").on('click', function () {
+		var action = $("input[name=divide]").val();
+        var firsts = $("input[name=firsts]").val() * 1;
+        var seconds = $("input[name=seconds]").val() * 1;
+		var divide = divide(firsts, seconds);
+		var results;
+		
+		function divide (firsts, seconds) {
+            results = firsts / seconds;
+        }
+        
+		$("input[name=results]").val(results);
+    });
+
+});

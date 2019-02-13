@@ -188,10 +188,29 @@ header {
   line-height: 1.5;
   background-color: rgba(33, 42, 238, 0.5);
   padding: 20px; }
-  #block3 .wrapper {
-    width: 100%;
-    position: relative;
-    margin: 0 auto; }
+  #block3 .calc {
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 35%; }
+    #block3 .calc div {
+      margin: 10px 0;
+      text-align: center; }
+    #block3 .calc label {
+      margin: 0 10px 0 0; }
+    #block3 .calc input[type=text] {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #000033; }
+    #block3 .calc .row {
+      height: 20px;
+      line-height: 15px;
+      vertical-align: middle; }
+      #block3 .calc .row .button {
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer; }
 
 #block4 {
   position: relative;
